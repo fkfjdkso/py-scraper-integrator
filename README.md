@@ -3,6 +3,10 @@
 Асинхронный Python-сервис для парсинга веб-страниц и автоматической отправки данных в Google Sheets.
 ![Python Version](https://img.shields.io/badge/python-3.14-blue?style=flat-square&logo=python&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%E2%9C%93-blue?style=flat-square&logo=docker&logoColor=white) ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 
+> **Важное примечание:**  
+> На текущий момент scraper работает **только с сайтом Читай-город** (chitai-gorod.ru).  
+> Поддержка других магазинов и сайтов с русской литературой находится в планах.
+
 Проект создавался как lightweight ETL-инструмент для автоматизации рутинного сбора данных: мониторинга цен, сбора объявлений, обновления каталогов и аналитических таблиц.
 
 **Результаты парсинга:**
