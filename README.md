@@ -5,7 +5,6 @@
 
 > **Важное примечание:**  
 > На текущий момент scraper работает **только с сайтом Читай-город** (chitai-gorod.ru).  
-> Поддержка других магазинов и сайтов с русской литературой находится в планах.
 
 Проект создавался как lightweight ETL-инструмент для автоматизации рутинного сбора данных: мониторинга цен, сбора объявлений, обновления каталогов и аналитических таблиц.
 
@@ -88,11 +87,8 @@ docker build -t py-scraper-integrator .
 
 ### Запуск контейнера
 
-```bash
-docker run --rm \
-  --env-file .env \
-  -v "${PWD}/credentials.json:/app/credentials.json" \
-  py-scraper-integrator
+```powershell
+docker run --rm -it --env-file .env -v "$(Get-Location)/credentials.json:/app/credentials.json" py-scraper-integrator
 ```
 
 ---
